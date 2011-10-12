@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: post
 title: "Hello Octopress"
 date: 2011-10-07 20:11
 comments: true
 sharing: true
 footer: true
+sidebar: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
