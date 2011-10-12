@@ -8,6 +8,17 @@ html {
 body > header {
   background-color: transparent;
 
+  img {
+    @include float-left;
+    margin-right: 30px;
+    padding: 4px;
+    background-color: #fff;
+  }
+
+  h1 {
+    margin-top: 20px;
+  }
+
   h1, h2 {
     font-family: "helvetica neue", helvetica, arial, sans-serif;
     font-weight: bold;
@@ -27,5 +38,17 @@ body > nav {
   form .search {
     font-family: "helvetica neue", helvetica, arial, sans-serif;
     letter-spacing: -0.05em;
+  }
+}
+
+body > footer > ul {
+  @include inline-list;
+
+  li {
+    margin-right: 10px;
+
+    &.find-me {
+      margin-right: 5px;
+    }
   }
 }
