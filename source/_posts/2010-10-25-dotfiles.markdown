@@ -10,6 +10,8 @@ sidebar: false
 
 I'm a little bit obsessed with dotfiles. I like looking at your dotfiles. I find it fascinating being able to get an insight in to how you work and to some degree how your brain works. Github is overflowing with people's configuration files. If you search Github for [dotfiles][] there are over 100 pages of results from the likes of [Ryan Bates][], [Mislav Marohnić][], and [me](http://github.com/jcf/dotfiles).
 
+<!--more-->
+
 ## Origins
 
 I started my dotfiles based upon Ryan Bates' setup because I liked his simple use of `rake` to soft link configuration files. Soft-linking your dotfiles means updates are instantaneous and all your files hang around in an encapsulated location readily available via a [`cdot`](http://github.com/jcf/dotfiles/blob/master/zsh/aliases#L6) command.

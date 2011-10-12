@@ -14,6 +14,8 @@ After some debate it was agreed that a significant difference between Ruby and P
 
 Refactoring code isn't something most programmers enjoy but it is something I like to do when the time is right.
 
+<!--more-->
+
 ## When to Refactor
 
 It's not practical or pragmatic spending all of your time refactoring code, but there are occasions where it makes sense to remove some code smell and make the process of changing or extending business logic easier.  

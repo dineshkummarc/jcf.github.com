@@ -10,6 +10,8 @@ sidebar: false
 
 jQuery's `animate` does a lot more than just scaling and translating nodes in a DOM and because of this it can be used to achieve some interesting effects.
 
+<!--more-->
+
 ## How it works
 
 When you call `animate` on a jQuery object you typically pass a hash of properties to change like so.

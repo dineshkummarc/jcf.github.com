@@ -10,6 +10,8 @@ sidebar: false
 
 I recently received an email from a large email delivery company bragging about a great new RESTful API, which got me quite excited because their current offering is pretty poor.
 
+<!--more-->
+
 When I read the following though I became a little concerned:
 
 {% blockquote %}

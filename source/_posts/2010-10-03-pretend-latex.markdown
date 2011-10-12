@@ -12,6 +12,8 @@ I've been working on a new blogging system recently with the intention of poweri
 
 While working on this ultra-modern blogging engine I had to write a letter and used [LaTeX](http://www.latex-project.org/) to do so. LaTex is a great way to produce clean, professionally typeset documents and in my opinion the results look fantastic.
 
+<!--more-->
+
 Then I thought in more depth about what I wanted from this blogging system I was writing. What did I want to acheive by reinventing the wheel?
 
 * Simple navigation
