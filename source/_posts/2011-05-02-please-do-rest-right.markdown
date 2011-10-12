@@ -12,10 +12,9 @@ I recently received an email from a large email delivery company bragging about 
 
 When I read the following though I became a little concerned:
 
-> #### REST & JSON FORMATS
->
-> Our new RESTful API mediates XML to REST and JSON formats for easier
-> adoption and integration.
+{% blockquote %}
+Our new RESTful API mediates XML to REST and JSON formats for easier adoption and integration.
+{% endblockquote %}
 
 That sentence doesn't read very well to the point of almost being completely nonsensical.
 

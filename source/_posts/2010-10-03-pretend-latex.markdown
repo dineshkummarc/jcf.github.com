@@ -44,4 +44,6 @@ Lorem ipsum dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, q
 
 Blockquotes:
 
-> Someone who said something
+{% blockquote %}
+Someone who said something
+{% endblockquote %}
