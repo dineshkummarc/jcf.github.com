@@ -1,0 +1,14 @@
+---
+layout: page
+title: "404 Not Found"
+comments: false
+sharing: false
+footer: true
+---
+
+``` plain
+▄██████████████▄▐█▄▄▄▄█▌
+██████▌▄▌▄▐▐▌███▌▀▀██▀▀
+████▄█▌▄▌▄▐▐▌▀███▄▄█▌
+▄▄▄▄▄██████████████▀
+```
