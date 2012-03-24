@@ -2,23 +2,7 @@
 layout: default
 ---
 
-<div class="intro">
-  <aside>
-    <p>
-      My name is <b>James Conroy-Finn</b>. I <a
-        href="https://github.com/jcf">build software</a> for fun and for
-      profit. I live in London, listen to lots of <a
-        href="http://last.fm/user/jamesconroyfinn">music</a>, and
-      contribute to a lot of great <a href="/projects">software
-        projects</a>.
-    </p>
-
-    <p>
-      If you would like to get in touch with me feel free to
-      <a href="mailto:james@logi.cl">send me an email</a>.
-    </p>
-  </aside>
-</div>
+{% include intro.html %}
 
 <div class="blog-index">
   {% assign index = true %}
@@ -28,17 +12,17 @@ layout: default
       {% include article.html %}
     </article>
   {% endfor %}
-  <nav class="pagination">
+  <div class="pagination">
     <div>
       {% if paginator.next_page %}
         <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
       {% endif %}
-      <a href="/blog/archives">Blog Archives</a>
+      <a href="/archives">Blog Archives</a>
       {% if paginator.previous_page %}
       <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
       {% endif %}
     </div>
-  </nav>
+  </div>
 </div>
 <aside class="sidebar">
   {% if site.blog_index_asides.size %}
