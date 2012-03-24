@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Voyeurism and your dotfiles - jamesconroyfinn.com</title>
+  <meta name="author" content="James Conroy-Finn">
+
+  
+  <meta name="description" content="I&#8217;m a little bit obsessed with dotfiles. I like looking at your dotfiles. I find it fascinating being able to get an insight in to how you work &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jamesconroyfinn.com/2010/10/dotfiles/">
+  <link href="http://www.gravatar.com/avatar/18c2795810ee15d41956e7f4cc5f3338?s=16" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="jamesconroyfinn.com" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<!-- OpenID delegation -->
+<link rel="openid.server" href="http://www.myopenid.com/server">
+<link rel="openid.delegate" href="http://jamesconroyfinn.myopenid.com">
+<link rel="openid2.local_id" href="http://jamesconroyfinn.myopenid.com">
+<link rel="openid2.provider" href="http://www.myopenid.com/server">
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <a href="/">
+    <img src="http://www.gravatar.com/avatar/18c2795810ee15d41956e7f4cc5f3338?s=256" height="128" width="128"></img>
+  </a>
+
+  <h1><a href="/">jamesconroyfinn.com</a></h1>
+  
+    <h2>Tweets longer than 140 characters</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jamesconroyfinn.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/key">Public Key</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Voyeurism and Your Dotfiles</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-10-25T20:11:00+01:00" pubdate  data-updated="true" >Oct 25<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I&#8217;m a little bit obsessed with dotfiles. I like looking at your dotfiles. I find it fascinating being able to get an insight in to how you work and to some degree how your brain works. Github is overflowing with people&#8217;s configuration files. If you search Github for <a href="http://github.com/jcf/dotfiles">dotfiles</a> there are over 100 pages of results from the likes of <a href="http://github.com/ryanb/dotfiles">Ryan Bates</a>, <a href="http://github.com/mislav/dotfiles">Mislav Marohnić</a>, and <a href="http://github.com/jcf/dotfiles">me</a>.</p>
+
+<!--more-->
+
+
+<h2>Origins</h2>
+
+<p>I started my dotfiles based upon Ryan Bates&#8217; setup because I liked his simple use of <code>rake</code> to soft link configuration files. Soft-linking your dotfiles means updates are instantaneous and all your files hang around in an encapsulated location readily available via a <a href="http://github.com/jcf/dotfiles/blob/master/zsh/aliases#L6"><code>cdot</code></a> command.</p>
+
+<p>I ended up refactoring the installer to use a more object-orientated approach to linking files and even had my &#8216;new improved&#8217; rake task read my Github token but the more I looked at it the more I thought it was an overengineered solution to an incredibly simple problem.</p>
+
+<p>Luckily I stumbled upon <a href="http://github.com/mislav/dotfiles">Mislav Marohnić</a>&#8217;s dotfiles and in it found an <a href="http://errtheblog.com/posts/89-huba-huba">installer</a> created by <a href="http://errtheblog.com/">Chris Wanstrath</a>. It&#8217;s ultra-simple and very easy to work with, which is why I fell in love with it!</p>
+
+<h2>Features</h2>
+
+<p>My <a href="http://github.com/jcf/dotfiles">dotfiles</a> include a load of ZSH configuration files, which add useful aliases for git and support RVM and Ruby on Rails development as well as including the best Vim plugins I&#8217;ve found in the few years I&#8217;ve been hacking with Vim.</p>
+
+<h3>git</h3>
+
+<p>I&#8217;ve borrowed, written and stolen a lot of <code>git</code> aliases and scripts from all over the place in the last few years. I&#8217;ve listed some interesting tidbits below.</p>
+
+<ul>
+<li><code>git last</code> Prints the last commit</li>
+<li><code>git db</code> Delete a local and remote branch in one command</li>
+<li><code>git lg</code> Print a list of commits with relative commit dates</li>
+</ul>
+
+
+<p>And there are loads more, which can be found in my <a href="http://github.com/jcf/dotfiles/blob/master/gitconfig">gitconfig</a>.</p>
+
+<h3>zsh</h3>
+
+<p>I always use Z-Shell. I love it and wouldn&#8217;t want to have to switch back to use Bash. I love the brilliant completion system, the fantastic globbing support and mind-boggling filtering available right on the command-line.</p>
+
+<p><img class="left" src="/uploads/zsh-shot.png"></p>
+
+<p>You might notice I&#8217;ve got custom window and tab titles, a mini left-hand prompt and although you can&#8217;t see it above I have a right-hand prompt that includes the current git branch (visit the full-size image and you&#8217;ll see the right-hand prompt).</p>
+
+<p>I use a lot of aliases including <code>gs</code> which is an alias for <code>git status -sb</code>. Something I like because it&#8217;s succinct and only shows me what I need to know.</p>
+
+<p>I also have global aliases for grepping and lessing output, which I&#8217;ve pasted below.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">A</span><span class="o">=</span><span class="s1">&#39;|ack&#39;</span>
+</span><span class='line'><span class="nv">G</span><span class="o">=</span><span class="s1">&#39;|grep&#39;</span>
+</span><span class='line'><span class="nv">H</span><span class="o">=</span><span class="s1">&#39;|head&#39;</span>
+</span><span class='line'><span class="nv">L</span><span class="o">=</span><span class="s1">&#39;|less&#39;</span>
+</span><span class='line'><span class="nv">N</span><span class="o">=</span><span class="s1">&#39;&amp;&gt;/dev/null&amp;&#39;</span>
+</span><span class='line'><span class="nv">T</span><span class="o">=</span><span class="s1">&#39;|tail&#39;</span>
+</span><span class='line'><span class="nv">W</span><span class="o">=</span><span class="s1">&#39;|wc&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As far as I&#8217;m aware this is a feature not available in Bash, although I might be wrong.</p>
+
+<h3>Ruby &amp; IRB</h3>
+
+<p>My <a href="http://github.com/jcf/dotfiles/blob/master/irbrc">irbrc</a> has a few useful methods and tricks that might be of interest. I&#8217;m a particular fan of my cutdown version of Giles Bowkett&#8217;s work to launch vim from IRB in order to ease editing longer bits of Ruby.</p>
+
+<p>There&#8217;s a nicely wrapped up <a href="http://github.com/jberkel/interactive_editor">interactive_editor</a> gem you might be interested in using if you decide you want the same behaviour but with multiple editor support.</p>
+
+<p>I stole <code>quick</code> from Evan Phoenix I think. It was definitely one of the Rubinius guys.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">quick</span><span class="p">(</span><span class="n">repetitions</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+</span><span class='line'>  <span class="nb">require</span> <span class="s1">&#39;benchmark&#39;</span>
+</span><span class='line'>    <span class="no">Benchmark</span><span class="o">.</span><span class="n">bmbm</span> <span class="k">do</span> <span class="o">|</span><span class="n">b</span><span class="o">|</span>
+</span><span class='line'>      <span class="n">b</span><span class="o">.</span><span class="n">report</span> <span class="p">{</span> <span class="n">repetitions</span><span class="o">.</span><span class="n">times</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span> <span class="p">}</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="kp">nil</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">quick</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span> <span class="p">{</span> <span class="s1">&#39;string&#39;</span> <span class="o">&lt;&lt;</span> <span class="s1">&#39; two three&#39;</span> <span class="p">}</span>
+</span><span class='line'><span class="n">quick</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span> <span class="p">{</span> <span class="s1">&#39;string&#39;</span> <span class="o">+</span> <span class="s1">&#39; two three&#39;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Conclusion</h2>
+
+<p>There are a lot more customisations I use daily and I haven&#8217;t even touched on what I&#8217;ve done to vim via my <a href="http://github.com/jcf/dotfiles">dotfiles</a>; that&#8217;s for another day.</p>
+
+<p>Feel free to email me or send me a message through Github if you like something in my <a href="http://github.com/jcf/dotfiles">dotfiles</a>, notice a problem or have something to contribute.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">James Conroy-Finn</span></span>
+
+      
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-10-25T20:11:00+01:00" pubdate  data-updated="true" >Oct 25<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jamesconroyfinn.com/2010/10/dotfiles/" data-via="jamesconroyfinn" data-counturl="http://jamesconroyfinn.com/2010/10/dotfiles/" >Tweet</a>
+  
+  
+</div>
+
+    
+  </footer>
+</article>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><ul>
+  <li>Find me online:</li>
+  <li><a href="https://github.com/jcf">Github</a></li>
+  <li><a href="https://twitter.com/jamesconroyfinn">Twitter</a></li>
+  <li><a href="https://facebook.com/jamesconroyfinn">Facebook</a></li>
+</ul>
+
+<p>
+  Copyright &copy; 2012 - James Conroy-Finn
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1442849-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

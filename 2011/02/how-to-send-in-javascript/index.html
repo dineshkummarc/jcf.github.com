@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How To Send In Javascript - jamesconroyfinn.com</title>
+  <meta name="author" content="James Conroy-Finn">
+
+  
+  <meta name="description" content="Ruby gives you a number of ways to send messages to objects. You can usedot syntax to send a message, you can use #send and you can accessmethods &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript/">
+  <link href="http://www.gravatar.com/avatar/18c2795810ee15d41956e7f4cc5f3338?s=16" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="jamesconroyfinn.com" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<!-- OpenID delegation -->
+<link rel="openid.server" href="http://www.myopenid.com/server">
+<link rel="openid.delegate" href="http://jamesconroyfinn.myopenid.com">
+<link rel="openid2.local_id" href="http://jamesconroyfinn.myopenid.com">
+<link rel="openid2.provider" href="http://www.myopenid.com/server">
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <a href="/">
+    <img src="http://www.gravatar.com/avatar/18c2795810ee15d41956e7f4cc5f3338?s=256" height="128" width="128"></img>
+  </a>
+
+  <h1><a href="/">jamesconroyfinn.com</a></h1>
+  
+    <h2>Tweets longer than 140 characters</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jamesconroyfinn.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/key">Public Key</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">How to Send in Javascript</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-02-20T20:11:00+00:00" pubdate  data-updated="true" >Feb 20<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Ruby gives you a number of ways to send messages to objects. You can use
+dot syntax to send a message, you can use <code>#send</code> and you can access
+methods directly using <code>#method</code>.</p>
+
+<!--more-->
+
+
+
+
+<div><script src='https://gist.github.com/965299.js?file='></script>
+<noscript><pre><code>var rainbow = {
+  dark_red: '900',
+  bright_red: 'f00',
+
+  dark_green: '090',
+  bright_green: '0f0',
+
+  dark_blue: '009',
+  bright_blue: '00f'
+}
+
+var color = function(name, bright) {
+  var valid_color = rainbow[(bright ? 'bright' : 'dark') + '_' + name];
+  if (valid_color) return '#' + valid_color();
+}</code></pre></noscript></div>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">James Conroy-Finn</span></span>
+
+      
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-02-20T20:11:00+00:00" pubdate  data-updated="true" >Feb 20<span>th</span>, 2011</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript/" data-via="jamesconroyfinn" data-counturl="http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript/" >Tweet</a>
+  
+  
+</div>
+
+    
+  </footer>
+</article>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><ul>
+  <li>Find me online:</li>
+  <li><a href="https://github.com/jcf">Github</a></li>
+  <li><a href="https://twitter.com/jamesconroyfinn">Twitter</a></li>
+  <li><a href="https://facebook.com/jamesconroyfinn">Facebook</a></li>
+</ul>
+
+<p>
+  Copyright &copy; 2012 - James Conroy-Finn
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1442849-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

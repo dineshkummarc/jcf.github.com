@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[jamesconroyfinn.com]]></title>
+  <link href="http://jamesconroyfinn.com/atom.xml" rel="self"/>
+  <link href="http://jamesconroyfinn.com/"/>
+  <updated>2012-03-24T15:48:52+00:00</updated>
+  <id>http://jamesconroyfinn.com/</id>
+  <author>
+    <name><![CDATA[James Conroy-Finn]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Octopress]]></title>
+    <link href="http://jamesconroyfinn.com/2011/10/hello-octopress/"/>
+    <updated>2011-10-07T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2011/10/hello-octopress</id>
+    <content type="html"><![CDATA[<p>In case you haven&#8217;t heard of <a href="http://octopress.org">Octopress</a>, it&#8217;s a fantastic static-site generator built on top of <a href="https://github.com/mojombo/jekyll">Jekyll</a>.</p>
+
+<p>I&#8217;ve been using Jekyll to build <a href="http://jamesconroyfinn.com">jamesconroyfinn.com</a> for sometime now and have been tickering with styles, layouts and features all along. Now with Octopress I feel like I&#8217;ve reached a point where I&#8217;m satisfied with the list of features, and the look of the site as a whole.</p>
+
+<!--more-->
+
+
+<h2>Features</h2>
+
+<p>Octopress offers some great features including:</p>
+
+<ul>
+<li><a href="http://octopress.org/docs/plugins/video-tag/">HTML5 Video Tag</a> - easily post images with class names and titles</li>
+<li><a href="http://octopress.org/docs/plugins/backtick-codeblock/">Backtick Code Block</a> - for simple lightweight code sharing</li>
+<li><a href="http://octopress.org/docs/plugins/codeblock/">Code Block</a> - for sharing code with titles and links</li>
+<li><a href="http://octopress.org/docs/plugins/include-code/">Include Code</a> - embed code from your filesystem with a download link</li>
+<li><a href="http://octopress.org/docs/plugins/gist-tag/">Gist Tag</a> - automatically downloads and embeds Github gists</li>
+<li><a href="http://octopress.org/docs/plugins/jsfiddle-tag/">jsFiddle</a> - embeds code from jsFiddle</li>
+<li><a href="http://octopress.org/docs/plugins/image-tag/">Image Tag</a> - easily post images with class names and titles</li>
+<li><a href="http://octopress.org/docs/plugins/render-partial/">Render Partial</a> - insert any file into another post or page</li>
+<li><a href="http://octopress.org/docs/plugins/blockquote/">Block Quote</a> - generate beautiful, semantic block quotes</li>
+<li><a href="http://octopress.org/docs/plugins/pullquote/">Pull Quote</a> - generate CSS only pull quotes — no duplicate data, no javascript</li>
+<li><a href="http://octopress.org/docs/plugins/category-generator/">Category Generator</a> - generates archive pages for each blog category</li>
+<li><a href="http://octopress.org/docs/plugins/include-array/">Include Array</a> - includes an array of partials specified in the _config.yml</li>
+</ul>
+
+
+<h2>Configuration</h2>
+
+<p>Configuring your site when it&#8217;s powered by Octopress is really simple.  After you clone your Octopress repo you&#8217;re provided with a Rakefile full of helpful tasks to create new posts, new pages, download the provided theme, start customising, and then <a href="http://octopress.org/docs/deploying/">deploy to an enviable list of hosts</a>.</p>
+
+<p>I&#8217;ve tweaked things a fair bit but about 90% of the markup produced comes straight from Octopress.</p>
+
+<h2>Tweaks</h2>
+
+<p>You can check out the changes I&#8217;ve made on <a href="https://github.com/jcf/jcf.github.com">Github</a> if you&#8217;re interested.</p>
+
+<p>You&#8217;ll find I have overidden a number of styles to get the header looking the way I want, added links to the footer, attempted to hide the sidebar at all times, and injected a smattering of Helvetica Neue.</p>
+
+<h2>Thanks</h2>
+
+<p>I have to thank <a href="http://brandonmathis.com/">Brandon Mathis</a> for all of his hardwork starting Octopress and to all those who have <a href="https://github.com/imathis/octopress/network/members">contributed</a> to making it what it is.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Looking in the Mirror - Part 1]]></title>
+    <link href="http://jamesconroyfinn.com/2011/05/looking-in-the-mirror-part1/"/>
+    <updated>2011-05-24T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2011/05/looking-in-the-mirror-part1</id>
+    <content type="html"><![CDATA[<p>I find it quite interesting to see how other people who and what tools they use. Whether it&#8217;s reading about <a href="http://chris.wanstrath.usesthis.com/">Chris Wanstrath</a> rave about his <a href="http://amzn.to/m6hWhi">Logitech MX518 mouse</a>, finding out <a href="http://tom.preston-werner.usesthis.com/">Tom Preston-Werner</a> has some kind of twisted house fetish or reading about whether my favourite OSS contributor uses some of the same tools I do, I find this kind of insight in to who others get their shit done truly fascinating.</p>
+
+<!--more-->
+
+
+<p>I don&#8217;t think I&#8217;ll be doing an interview for <a href="http://usesthis.com">UsesThis</a> anytime soon (maybe when I have a few thousand followers on <a href="http://twitter.com/jamesconroyfinn">Twitter</a> and build a Rails-like framework for MacRuby development) so instead I&#8217;ll post a few screenshots and share some of my hidden OS X gems.</p>
+
+<p><img class="left" src="http://jamesconroyfinn.com/uploads/solarized-iterm2.png"></p>
+
+<p>If you haven&#8217;t seen the <a href="http://ethanschoonover.com/solarized">solarized</a> theme I&#8217;d highly recommend it. I use it in <a href="http://code.google.com/p/macvim/">MacVim</a> and <a href="http://www.iterm2.com/">iTerm2</a> everyday in and out of work.  I find it to be very easy on the eyes without being wishy washy. That&#8217;s the technical term.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Please do REST right]]></title>
+    <link href="http://jamesconroyfinn.com/2011/05/please-do-rest-right/"/>
+    <updated>2011-05-02T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2011/05/please-do-rest-right</id>
+    <content type="html"><![CDATA[<p>I recently received an email from a large email delivery company bragging about a great new RESTful API, which got me quite excited because their current offering is pretty poor.</p>
+
+<!--more-->
+
+
+<p>When I read the following though I became a little concerned:</p>
+
+<blockquote><p>Our new RESTful API mediates XML to REST and JSON formats for easier adoption and integration.</p></blockquote>
+
+
+<p>That sentence doesn&#8217;t read very well to the point of almost being completely nonsensical.</p>
+
+<p>A RESTful API should use HTTP methods to interact with resources. When I want to know about all users I should <code>GET /users</code>, when I want to know about one user I should <code>GET /users/some-unique-identifier</code>, when I want to create a user I should <code>POST</code> to <code>/users</code>. Mixing up these methods or verbs and adding superfluous path parameters is not an example of a good RESTful API.</p>
+
+<p>If you want to do it a different way that&#8217;s fine. Just don&#8217;t call it RESTful if it&#8217;s not.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Representational_State_Transfer#RESTful_web_services">Representational State Transfer on Wikipedia</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript Garden]]></title>
+    <link href="http://jamesconroyfinn.com/2011/03/javascript-garden/"/>
+    <updated>2011-03-15T20:11:00+00:00</updated>
+    <id>http://jamesconroyfinn.com/2011/03/javascript-garden</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve mentioned this site to a few people in the last few days but couldn&#8217;t remember the exact URL. Turns out it&#8217;s not as simple as googling &#8220;github javascript advanced&#8221; so here&#8217;s a direct link.</p>
+
+<p><a href="http://bonsaiden.github.com/JavaScript-Garden/">Bonsaiden&#8217;s Javascript Garden</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How To Send In Javascript]]></title>
+    <link href="http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript/"/>
+    <updated>2011-02-20T20:11:00+00:00</updated>
+    <id>http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript</id>
+    <content type="html"><![CDATA[<p>Ruby gives you a number of ways to send messages to objects. You can use
+dot syntax to send a message, you can use <code>#send</code> and you can access
+methods directly using <code>#method</code>.</p>
+
+<!--more-->
+
+
+
+
+<div><script src='https://gist.github.com/965299.js?file='></script>
+<noscript><pre><code>var rainbow = {
+  dark_red: '900',
+  bright_red: 'f00',
+
+  dark_green: '090',
+  bright_green: '0f0',
+
+  dark_blue: '009',
+  bright_blue: '00f'
+}
+
+var color = function(name, bright) {
+  var valid_color = rainbow[(bright ? 'bright' : 'dark') + '_' + name];
+  if (valid_color) return '#' + valid_color();
+}</code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Return Of Helvetica]]></title>
+    <link href="http://jamesconroyfinn.com/2011/02/return-of-helvetica/"/>
+    <updated>2011-02-19T20:11:00+00:00</updated>
+    <id>http://jamesconroyfinn.com/2011/02/return-of-helvetica</id>
+    <content type="html"><![CDATA[<p>A new year, a new look. I played with using a big serif font and a very minimalist design but went back to my beloved Helvetica. Big, bold and boring but it&#8217;s what I like being a slightly aged and apparently uncool developer.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Voyeurism and your dotfiles]]></title>
+    <link href="http://jamesconroyfinn.com/2010/10/dotfiles/"/>
+    <updated>2010-10-25T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2010/10/dotfiles</id>
+    <content type="html"><![CDATA[<p>I&#8217;m a little bit obsessed with dotfiles. I like looking at your dotfiles. I find it fascinating being able to get an insight in to how you work and to some degree how your brain works. Github is overflowing with people&#8217;s configuration files. If you search Github for <a href="http://github.com/jcf/dotfiles">dotfiles</a> there are over 100 pages of results from the likes of <a href="http://github.com/ryanb/dotfiles">Ryan Bates</a>, <a href="http://github.com/mislav/dotfiles">Mislav Marohnić</a>, and <a href="http://github.com/jcf/dotfiles">me</a>.</p>
+
+<!--more-->
+
+
+<h2>Origins</h2>
+
+<p>I started my dotfiles based upon Ryan Bates&#8217; setup because I liked his simple use of <code>rake</code> to soft link configuration files. Soft-linking your dotfiles means updates are instantaneous and all your files hang around in an encapsulated location readily available via a <a href="http://github.com/jcf/dotfiles/blob/master/zsh/aliases#L6"><code>cdot</code></a> command.</p>
+
+<p>I ended up refactoring the installer to use a more object-orientated approach to linking files and even had my &#8216;new improved&#8217; rake task read my Github token but the more I looked at it the more I thought it was an overengineered solution to an incredibly simple problem.</p>
+
+<p>Luckily I stumbled upon <a href="http://github.com/mislav/dotfiles">Mislav Marohnić</a>&#8217;s dotfiles and in it found an <a href="http://errtheblog.com/posts/89-huba-huba">installer</a> created by <a href="http://errtheblog.com/">Chris Wanstrath</a>. It&#8217;s ultra-simple and very easy to work with, which is why I fell in love with it!</p>
+
+<h2>Features</h2>
+
+<p>My <a href="http://github.com/jcf/dotfiles">dotfiles</a> include a load of ZSH configuration files, which add useful aliases for git and support RVM and Ruby on Rails development as well as including the best Vim plugins I&#8217;ve found in the few years I&#8217;ve been hacking with Vim.</p>
+
+<h3>git</h3>
+
+<p>I&#8217;ve borrowed, written and stolen a lot of <code>git</code> aliases and scripts from all over the place in the last few years. I&#8217;ve listed some interesting tidbits below.</p>
+
+<ul>
+<li><code>git last</code> Prints the last commit</li>
+<li><code>git db</code> Delete a local and remote branch in one command</li>
+<li><code>git lg</code> Print a list of commits with relative commit dates</li>
+</ul>
+
+
+<p>And there are loads more, which can be found in my <a href="http://github.com/jcf/dotfiles/blob/master/gitconfig">gitconfig</a>.</p>
+
+<h3>zsh</h3>
+
+<p>I always use Z-Shell. I love it and wouldn&#8217;t want to have to switch back to use Bash. I love the brilliant completion system, the fantastic globbing support and mind-boggling filtering available right on the command-line.</p>
+
+<p><img class="left" src="http://jamesconroyfinn.com/uploads/zsh-shot.png"></p>
+
+<p>You might notice I&#8217;ve got custom window and tab titles, a mini left-hand prompt and although you can&#8217;t see it above I have a right-hand prompt that includes the current git branch (visit the full-size image and you&#8217;ll see the right-hand prompt).</p>
+
+<p>I use a lot of aliases including <code>gs</code> which is an alias for <code>git status -sb</code>. Something I like because it&#8217;s succinct and only shows me what I need to know.</p>
+
+<p>I also have global aliases for grepping and lessing output, which I&#8217;ve pasted below.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">A</span><span class="o">=</span><span class="s1">&#39;|ack&#39;</span>
+</span><span class='line'><span class="nv">G</span><span class="o">=</span><span class="s1">&#39;|grep&#39;</span>
+</span><span class='line'><span class="nv">H</span><span class="o">=</span><span class="s1">&#39;|head&#39;</span>
+</span><span class='line'><span class="nv">L</span><span class="o">=</span><span class="s1">&#39;|less&#39;</span>
+</span><span class='line'><span class="nv">N</span><span class="o">=</span><span class="s1">&#39;&amp;&gt;/dev/null&amp;&#39;</span>
+</span><span class='line'><span class="nv">T</span><span class="o">=</span><span class="s1">&#39;|tail&#39;</span>
+</span><span class='line'><span class="nv">W</span><span class="o">=</span><span class="s1">&#39;|wc&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As far as I&#8217;m aware this is a feature not available in Bash, although I might be wrong.</p>
+
+<h3>Ruby &amp; IRB</h3>
+
+<p>My <a href="http://github.com/jcf/dotfiles/blob/master/irbrc">irbrc</a> has a few useful methods and tricks that might be of interest. I&#8217;m a particular fan of my cutdown version of Giles Bowkett&#8217;s work to launch vim from IRB in order to ease editing longer bits of Ruby.</p>
+
+<p>There&#8217;s a nicely wrapped up <a href="http://github.com/jberkel/interactive_editor">interactive_editor</a> gem you might be interested in using if you decide you want the same behaviour but with multiple editor support.</p>
+
+<p>I stole <code>quick</code> from Evan Phoenix I think. It was definitely one of the Rubinius guys.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">quick</span><span class="p">(</span><span class="n">repetitions</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+</span><span class='line'>  <span class="nb">require</span> <span class="s1">&#39;benchmark&#39;</span>
+</span><span class='line'>    <span class="no">Benchmark</span><span class="o">.</span><span class="n">bmbm</span> <span class="k">do</span> <span class="o">|</span><span class="n">b</span><span class="o">|</span>
+</span><span class='line'>      <span class="n">b</span><span class="o">.</span><span class="n">report</span> <span class="p">{</span> <span class="n">repetitions</span><span class="o">.</span><span class="n">times</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span> <span class="p">}</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="kp">nil</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">quick</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span> <span class="p">{</span> <span class="s1">&#39;string&#39;</span> <span class="o">&lt;&lt;</span> <span class="s1">&#39; two three&#39;</span> <span class="p">}</span>
+</span><span class='line'><span class="n">quick</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span> <span class="p">{</span> <span class="s1">&#39;string&#39;</span> <span class="o">+</span> <span class="s1">&#39; two three&#39;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Conclusion</h2>
+
+<p>There are a lot more customisations I use daily and I haven&#8217;t even touched on what I&#8217;ve done to vim via my <a href="http://github.com/jcf/dotfiles">dotfiles</a>; that&#8217;s for another day.</p>
+
+<p>Feel free to email me or send me a message through Github if you like something in my <a href="http://github.com/jcf/dotfiles">dotfiles</a>, notice a problem or have something to contribute.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[jQuery Animate]]></title>
+    <link href="http://jamesconroyfinn.com/2010/10/jquery-animate/"/>
+    <updated>2010-10-10T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2010/10/jquery-animate</id>
+    <content type="html"><![CDATA[<p>jQuery&#8217;s <code>animate</code> does a lot more than just scaling and translating nodes in a DOM and because of this it can be used to achieve some interesting effects.</p>
+
+<!--more-->
+
+
+<h2>How it works</h2>
+
+<p>When you call <code>animate</code> on a jQuery object you typically pass a hash of properties to change like so.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// Here background colour on `#selector` fades to black.</span>
+</span><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#selector&#39;</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span><span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">&#39;#000&#39;</span><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The interesting thing is you don&#8217;t have to use a selector to construct the initial jQuery object. You can simply pass jQuery a hash and this will define your initial properties.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="mi">0</span><span class="p">}).</span><span class="nx">animate</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="mi">5</span><span class="p">},</span>
+</span><span class='line'>  <span class="nx">step</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The result of running the above example will be 0 to 5 output in your console log. Duration still works as it would with a typical <code>animate</code>.</p>
+
+<h2>A real-world application</h2>
+
+<p>A more realistic example that reflects something I did recently is below.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$progress_bar</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#progress_bar&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">$</span><span class="p">({</span><span class="nx">counter</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">0</span><span class="p">}).</span><span class="nx">animate</span><span class="p">({</span><span class="nx">counter</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="p">},</span>
+</span><span class='line'>  <span class="nx">step</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">$progress_bar</span><span class="p">.</span><span class="nx">css</span><span class="p">({</span><span class="nx">width</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">width</span><span class="p">});</span>
+</span><span class='line'>    <span class="nx">$progress_bar</span><span class="p">.</span><span class="nx">innerText</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">counter</span><span class="p">));</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Refactoring in Ruby]]></title>
+    <link href="http://jamesconroyfinn.com/2010/10/refactoring-in-ruby/"/>
+    <updated>2010-10-05T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2010/10/refactoring-in-ruby</id>
+    <content type="html"><![CDATA[<p>After reading <a href="http://www.amazon.co.uk/gp/product/0321603508?ie=UTF8&amp;tag=jameconrfinn-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=0321603508">Refactoring: Ruby Edition</a> by <a href="http://blog.jayfields.com/">Jay Fields</a> a colleague reminded of a very old open Q&amp;A session at the end of a <a href="http://video.google.com/videoplay?docid=1149552518153462279#">Snakes and Rubies</a> event with the creator of Rails, <a href="http://loudthinking.com)">David Heinemeier Hansson</a>, and the co-creator of the Django framework, <a href="http://www.holovaty.com/">Adrian Holovaty</a>.</p>
+
+<p>After some debate it was agreed that a significant difference between Ruby and Python is that in Python there is one way to do something, in Ruby there are many. David made a valid point however when he argues that of all the ways of doing something in Ruby there is generally one that feels right, an implementation that is more beautiful and that&#8217;s where <a href="http://www.amazon.co.uk/gp/product/0321603508?ie=UTF8&amp;tag=jameconrfinn-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=0321603508">Refactoring: Ruby Edition</a> proves to be an excellent read.</p>
+
+<p>Refactoring code isn&#8217;t something most programmers enjoy but it is something I like to do when the time is right.</p>
+
+<!--more-->
+
+
+<h2>When to Refactor</h2>
+
+<p>It&#8217;s not practical or pragmatic spending all of your time refactoring code, but there are occasions where it makes sense to remove some code smell and make the process of changing or extending business logic easier.</p>
+
+<p>Jay Fields quotes a guideline <a href="http://www.refactory.com/people/don.html">Don Roberts</a> gave him. &#8220;The Rule of Three&#8221; states the first time you do something you just do it. The second time you do something similar you wince at the duplication. The third time you refactor.</p>
+
+<h3>Refactor When Adding New Functionality</h3>
+
+<p>Whether it&#8217;s to simply understand something you or someone else has written in the past it can be helpful to understand some complicated code and refactor it to make it simpler and more easily understood.</p>
+
+<h3>Refactor When You Need to Fix a Bug</h3>
+
+<p>When it&#8217;s time to fix something that doesn&#8217;t work it can be a good time to consider simplification through refactoring, although not always!</p>
+
+<h3>Refactoring During Code Reviews</h3>
+
+<p>I&#8217;m a big fan of code reviews and genuinely appreciate constructive criticism from colleagues. Sharing knowledge and experience only improves a team and is a logical time to consider refactoring.</p>
+
+<h2>Time to Refactor</h2>
+
+<p>Consider a babe. There might be many babes but all babes have some attributes your boss is interested in. As a programmer our boss wants us to work out how babes work and makes sure our application can predict their behaviour in order to make lots and lots of money.</p>
+
+<p>So someone creates a babe based solely upon what they know about babes. It turns out they don&#8217;t know that much but everyone in the team pools knowledge and eventually after several interactions we know enough about babes to keep the board of directors happy.</p>
+
+<div><script src='https://gist.github.com/965202.js?file='></script>
+<noscript><pre><code>class Babe
+  def initialize(name, hair_color, weight, hotness, nationality)
+    @name = name
+    @hair_color = hair_color
+    @weight = weight
+    @hotness = hotness
+    @nationality = nationality
+  end
+
+  def dance
+    if nationality == 'American'
+      return 'Grind'
+    elsif nationality == 'British'
+      return 'Wiggle'
+    elsif type == 'German'
+      return 'Strut'
+    else
+      return 'Bounce'
+    end
+  end
+
+  def speak
+    if nationality == 'American'
+      return 'Totally'
+    elsif nationality == 'British'
+      return 'Woteva'
+    elsif type == 'German'
+      return 'Ja'
+    else
+      return 'Hi'
+    end
+  end
+
+  def fit?
+    @weight &lt; 100
+  end
+
+  def beautiful?
+    @hotness &gt; 2
+  end
+
+  def in_my_league?
+    if fit?
+      if beautiful?
+        return false
+      else
+        return true
+      end
+    end
+    false
+  end
+end</code></pre></noscript></div>
+
+
+<p>Now we&#8217;re doing a code review and looking at how a babe works. There&#8217;s some repetition in the <code>#dance</code> and <code>#speak</code> methods and the <code>#in_my_league?</code> method
+has grown in to something quite difficult to understand.</p>
+
+<p>We&#8217;re working with Ruby, which means we can do almost anything we want to a babe but let&#8217;s remember what DHH said, there&#8217;s always a beautiful way to do something
+and that&#8217;s what we want. Beautiful babes.</p>
+
+<h2>Initialisation</h2>
+
+<p>Let&#8217;s start with the <code>#initialize</code> method. It takes a whole lot of arguments, in a very specific order, which makes it quite difficult to work with.</p>
+
+<div><script src='https://gist.github.com/965216.js?file='></script>
+<noscript><pre><code>def initialize(name, attributes = {})
+  @name = name
+  attributes.each do |attribute, value|
+    instance_variable_set(&quot;@#{attribute}&quot;, value)
+  end
+end</code></pre></noscript></div>
+
+
+<p>Using a hash of optional attributes gives us named arguments. Much nicer when creating a new babe but not ideal when you don&#8217;t aren&#8217;t sure which attributes in a babe matter to the boss!</p>
+
+<p>So we could define valid attributes and only extract those using <code>#slice</code>.</p>
+
+<div><script src='https://gist.github.com/965218.js?file='></script>
+<noscript><pre><code>VALID_ATTRIBUTES = [:hair_color, :weight, :hotness, :nationality]
+
+def initialize(name, attributes = {})
+  @name = name
+  extract_attributes(attributes)
+end
+
+private
+
+def extract_attributes(attributes)
+  attributes.slice(*VALID_ATTRIBUTES).each do |name, value|
+    instance_variable_set(&quot;@#{name}&quot;, value)
+  end
+end</code></pre></noscript></div>
+
+
+<p>Better but not beautiful, yet. Named arguments are great but not validating them doesn&#8217;t feel right in my opinion.</p>
+
+<p>A number of methods in Rails use <code>#assert_valid_keys</code> to ensure only valid options are passed to a method and we can do the same.</p>
+
+<div><script src='https://gist.github.com/965227.js?file='></script>
+<noscript><pre><code>require 'active_support/core_ext/hash'
+
+class Babe
+  VALID_ATTRIBUTES = [:hair_color, :weight, :hotness, :nationality]
+
+  attr_accessor *VALID_ATTRIBUTES
+
+  def initialize(name, attributes = {})
+    @name = name
+    attributes.assert_valid_keys(*VALID_ATTRIBUTES)
+    @hair_color  = attributes[:hair_color]
+    @weight      = attributes[:weight]
+    @hotness     = attributes[:hotness]
+    @nationality = attributes[:nationality]
+  end
+
+  # ...
+end</code></pre></noscript></div>
+
+
+<h3>Bad Metamonkey!</h3>
+
+<p>Refactoring does not mean &#8220;show me your Ruby foo!&#8221; Temptation to add crazy methods like I do below is often best resisted.</p>
+
+<div><script src='https://gist.github.com/965229.js?file='></script>
+<noscript><pre><code>require 'active_support/core_ext/hash'
+
+class Object
+  def attr_accessors_from_hash(hash)
+    hash.each do |name, value|
+      self.class.send(:attr_accessor, name)
+      self.send(&quot;#{name}=&quot;, value)
+    end
+  end
+end
+
+class Babe
+  VALID_ATTRIBUTES = [:hair_color, :weight, :hotness, :nationality]
+
+  def initialize(name, attributes = {})
+    @name = name
+    attributes.assert_valid_keys(*VALID_ATTRIBUTES)
+    attr_accessors_from_hash(attributes)
+  end
+
+  # ...
+end</code></pre></noscript></div>
+
+
+<p>Why you might ask? Because <code>attr_accessors_from_hash</code> isn&#8217;t part of Ruby. The method name is relatively self-explanatory but once you find the implementation consider this. What the hell does that method do? I&#8217;d argue it&#8217;s not very readable and to be honest quite unnecessary.</p>
+
+<h2>Dancing &amp; Speaking</h2>
+
+<p>The board of directors made it very clear that in their opinion two of the most important things each and everyone of our babes do is dance and speak. Both are entirely dependent on the same factors, nationality. According to the directors.</p>
+
+<div><script src='https://gist.github.com/965235.js?file='></script>
+<noscript><pre><code>class Babe
+  SKILLS = {
+    'American' =&gt; %w(Grind Totally),
+    'British' =&gt; %w(Wiggle Woteva),
+    'German' =&gt; %w(Strut Ja),
+  }
+  SKILLS.default = %w(Bounce Hi)
+
+  # ...
+
+  def dance
+    SKILLS[nationality].first
+  end
+
+  def speak
+    SKILLS[nationality].last
+  end
+
+  # ...
+end</code></pre></noscript></div>
+
+
+<h2>New improved babes</h2>
+
+<p>With a <code>Nationality</code> class we can extract the nationality behaviour out of <code>Babe</code> and delegate what a babe&#8217;s likely to say or how she&#8217;s going to dance to her nationality improving code quality and perpetuating confusing stereotypes.</p>
+
+<div><script src='https://gist.github.com/965239.js?file='></script>
+<noscript><pre><code>require 'active_support/core_ext/hash'
+
+class Nationality &lt; Struct.new(:name, :dance_move, :speech)
+  class &lt;&lt; self
+    def all
+      @nationalities ||= [
+        Nationality.new('American', 'Grind', 'Totally'),
+        Nationality.new('British', 'Wiggle', 'Woteva'),
+        Nationality.new('German', 'Strut', 'Ja'),
+      ]
+    end
+
+    def default
+      @default ||= Nationality.new('Unknown', 'Bounce', 'Hi')
+    end
+
+    def find(place)
+      all.detect { |nationality| nationality.name == place }
+    end
+  end
+
+  alias :dance :dance_move
+  alias :speak :speech
+end
+
+class Babe
+  extend Forwardable
+
+  VALID_ATTRIBUTES = [:hair_color, :weight, :hotness, :nationality]
+
+  def_delegators :nationality, :dance, :speak
+  attr_accessor *VALID_ATTRIBUTES
+
+  def initialize(name, weight, hotness, attributes = {})
+    attributes.assert_valid_keys(*VALID_ATTRIBUTES)
+
+    self.name        = name
+    self.hair_color  = attributes[:hair_color]
+    self.weight      = attributes[:weight]
+    self.hotness     = attributes[:hotness]
+    self.nationality = attributes[:nationality]
+  end
+
+  def nationality
+    @nationality || Nationality.default
+  end
+
+  def nationality=(place)
+    @nationality = Nationality.find(place)
+  end
+
+  def fit?
+    weight.try(:&lt;, 100)
+  end
+
+  def beautiful?
+    hotness.try(:&gt;, 2)
+  end
+
+  def in_my_league?
+    fit? ^ beautiful?
+  end
+end</code></pre></noscript></div>
+
+
+<p>So that&#8217;s it. Refactored and all round an improvement I think.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pretend Textile]]></title>
+    <link href="http://jamesconroyfinn.com/2010/10/pretend-latex/"/>
+    <updated>2010-10-03T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2010/10/pretend-latex</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve been working on a new blogging system recently with the intention of powering <a href="http://jamesconroyfinn.com">jamesconroyfinn.com</a> using it. It featured a unique design per page and a giant footer with a &#8216;slick&#8217; jQuery scrollable archive. It was a real example of a modern, swanky blog that impresses every visitor lucky enough to browse it&#8217;s shiny pages.</p>
+
+<p>While working on this ultra-modern blogging engine I had to write a letter and used <a href="http://www.latex-project.org/">LaTeX</a> to do so. LaTex is a great way to produce clean, professionally typeset documents and in my opinion the results look fantastic.</p>
+
+<!--more-->
+
+
+<p>Then I thought in more depth about what I wanted from this blogging system I was writing. What did I want to acheive by reinventing the wheel?</p>
+
+<ul>
+<li>Simple navigation</li>
+<li>A distinctive look that would be recognisable almost immediately</li>
+<li>Something that shows what I&#8217;m about</li>
+<li>A way to share my thoughts and discoveries</li>
+</ul>
+
+
+<p>And this thinking led me to realise that using jQuery and Rails was complete overkill and was only distracting me from achieving what I really wanted to, what all of this was about. Writing about things I&#8217;m passionate about and sharing what I know about tools and technology I&#8217;ve used in the past.</p>
+
+<p>So here we are. Pretending Textile&#8230;</p>
+
+<p>I&#8217;m using <a href="http://github.com/mojombo/jekyll">jekyll</a>, <a href="http://daringfireball.net/projects/markdown/">markdown</a> in my posts, <a href="http://pygments.org/">pygments</a> for syntax highlighting, and <a href="http://code.google.com/webfonts">Google Fonts</a> among other things to make my site look like it was build using LaTex.</p>
+
+<h2>What it looks like</h2>
+
+<p>Code blocks:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Tex</span>
+</span><span class='line'>  <span class="c1"># always looks clean</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">clean?</span>
+</span><span class='line'>    <span class="kp">true</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Lorem Ipsum</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Blockquotes:</p>
+
+<blockquote><p>Someone who said something</p></blockquote>
+
+]]></content>
+  </entry>
+  
+</feed>
