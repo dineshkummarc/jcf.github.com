@@ -5,6 +5,8 @@ html {
   background: $page-bg image-url('texture.png') top left;
 }
 
+b { font-weight: bold; }
+
 body > header {
   background-color: transparent;
 
@@ -66,4 +68,25 @@ article > footer {
 
 aside.sidebar {
   display: none;
+}
+
+#content .intro {
+  $half-padding: $pad-wide / 2;
+  $notice: #fffbe9;
+
+  padding-left: $half-padding;
+  padding-right: $half-padding;
+  width: inherit;
+
+  aside {
+    background-color: $notice;
+    border: 1px solid darken(desaturate($notice, 10%), 5%);
+
+    padding: 1em $half-padding;
+    margin: 0;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
