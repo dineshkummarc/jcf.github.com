@@ -10,7 +10,7 @@ body > header {
 
   img {
     @include float-left;
-    @include transition(all, 0.2s, ease-out);
+    @include transition(all 0.2s ease-out);
     margin-right: 30px;
     padding: 4px;
     background-color: #fff;
