@@ -7,11 +7,11 @@ categories: Ruby, Rails
 ---
 
 In the process of testing some custom error handling I found myself
-needing to fake my remote address in order to bypass
-`consider_all_requests_local`.
+needing to fake my remote address when visiting pages with Capybara and
+Rack::Test.
 
-To do this with Capybara, and Rack::Test you can use the following
-Cucumber step.
+To do this I had to delve in to the internals of Rack::Test using the
+following Cucumber step.
 
 ``` ruby
 Given /^I send requests from a remote address$/ do
