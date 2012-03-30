@@ -44,9 +44,9 @@ def headers_for_env
 end
 ```
 
-- [404s in Rails 3]()
-- [Alex Rothenberg]()
-- [Rack::Test#default_env]()
+- [404s in Rails 3][]
+- [Alex Rothenberg][]
+- [Rack::Test#default_env][]
 
 [404s in Rails 3]: https://github.com/rails/rails/issues/671#issuecomment-1780159
 [Alex Rothenberg]: http://www.alexrothenberg.com/2011/11/21/testing-ip-whitelisting-in-your-specs-and-features.html
