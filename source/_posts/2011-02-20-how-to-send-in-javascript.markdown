@@ -6,6 +6,7 @@ comments: true
 sharing: true
 footer: true
 sidebar: false
+categories: Ruby, Javascript
 ---
 
 Ruby gives you a number of ways to send messages to objects. You can use

@@ -6,6 +6,7 @@ comments: true
 sharing: true
 footer: true
 sidebar: false
+categories: Ruby
 ---
 
 After reading [Refactoring: Ruby Edition][] by [Jay Fields][] a colleague reminded of a very old open Q&A session at the end of a [Snakes and Rubies][] event with the creator of Rails, [David Heinemeier Hansson][], and the co-creator of the Django framework, [Adrian Holovaty][].

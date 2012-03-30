@@ -6,6 +6,7 @@ comments: true
 sharing: true
 footer: true
 sidebar: false
+categories: Asides
 ---
 
 I find it quite interesting to see how other people who and what tools they use. Whether it's reading about [Chris Wanstrath](http://chris.wanstrath.usesthis.com/) rave about his [Logitech MX518 mouse](http://amzn.to/m6hWhi), finding out [Tom Preston-Werner](http://tom.preston-werner.usesthis.com/) has some kind of twisted house fetish or reading about whether my favourite OSS contributor uses some of the same tools I do, I find this kind of insight in to who others get their shit done truly fascinating.

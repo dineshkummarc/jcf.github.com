@@ -6,6 +6,7 @@ comments: true
 sharing: true
 footer: true
 sidebar: false
+categories: Javascript
 ---
 
 jQuery's `animate` does a lot more than just scaling and translating nodes in a DOM and because of this it can be used to achieve some interesting effects.

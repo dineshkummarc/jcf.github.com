@@ -6,6 +6,7 @@ comments: true
 sharing: true
 footer: true
 sidebar: false
+categories: Asides
 ---
 
 I've been working on a new blogging system recently with the intention of powering [jamesconroyfinn.com](http://jamesconroyfinn.com) using it. It featured a unique design per page and a giant footer with a 'slick' jQuery scrollable archive. It was a real example of a modern, swanky blog that impresses every visitor lucky enough to browse it's shiny pages.

@@ -6,6 +6,7 @@ comments: true
 sharing: true
 footer: true
 sidebar: false
+categories: Javascript
 ---
 
 I've mentioned this site to a few people in the last few days but couldn't remember the exact URL. Turns out it's not as simple as googling "github javascript advanced" so here's a direct link.

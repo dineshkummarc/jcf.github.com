@@ -6,6 +6,7 @@ comments: true
 sharing: true
 footer: true
 sidebar: false
+categories: Rails
 ---
 
 I recently received an email from a large email delivery company bragging about a great new RESTful API, which got me quite excited because their current offering is pretty poor.

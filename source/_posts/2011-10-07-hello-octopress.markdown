@@ -6,6 +6,7 @@ comments: true
 sharing: true
 footer: true
 sidebar: false
+categories: Asides
 ---
 
 In case you haven't heard of [Octopress][], it's a fantastic static-site generator built on top of [Jekyll][].
