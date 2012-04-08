@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Javascript | jamesconroyfinn.com]]></title>
+  <link href="http://jamesconroyfinn.com/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://jamesconroyfinn.com/"/>
+  <updated>2012-04-08T23:21:42+01:00</updated>
+  <id>http://jamesconroyfinn.com/</id>
+  <author>
+    <name><![CDATA[James Conroy-Finn]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript Garden]]></title>
+    <link href="http://jamesconroyfinn.com/2011/03/javascript-garden/"/>
+    <updated>2011-03-15T20:11:00+00:00</updated>
+    <id>http://jamesconroyfinn.com/2011/03/javascript-garden</id>
+    <content type="html"><![CDATA[<p>I've mentioned this site to a few people in the last few days but couldn't remember the exact URL. Turns out it's not as simple as googling "github javascript advanced" so here's a direct link.</p>
+
+<p><a href="http://bonsaiden.github.com/JavaScript-Garden/">Bonsaiden's Javascript Garden</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How To Send In Javascript]]></title>
+    <link href="http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript/"/>
+    <updated>2011-02-20T20:11:00+00:00</updated>
+    <id>http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript</id>
+    <content type="html"><![CDATA[<p>Ruby gives you a number of ways to send messages to objects. You can use
+dot syntax to send a message, you can use <code>#send</code> and you can access
+methods directly using <code>#method</code>.</p>
+
+<!--more-->
+
+
+<p><div><script src='https://gist.github.com/965299.js?file='></script>
+<noscript><pre><code>var rainbow = {
+  dark_red: '900',
+  bright_red: 'f00',
+
+  dark_green: '090',
+  bright_green: '0f0',
+
+  dark_blue: '009',
+  bright_blue: '00f'
+}
+
+var color = function(name, bright) {
+  var valid_color = rainbow[(bright ? 'bright' : 'dark') + '_' + name];
+  if (valid_color) return '#' + valid_color();
+}</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[jQuery Animate]]></title>
+    <link href="http://jamesconroyfinn.com/2010/10/jquery-animate/"/>
+    <updated>2010-10-10T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2010/10/jquery-animate</id>
+    <content type="html"><![CDATA[<p>jQuery's <code>animate</code> does a lot more than just scaling and translating nodes in a DOM and because of this it can be used to achieve some interesting effects.</p>
+
+<!--more-->
+
+
+<h2>How it works</h2>
+
+<p>When you call <code>animate</code> on a jQuery object you typically pass a hash of properties to change like so.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// Here background colour on &lt;code&gt;#selector&lt;/code&gt; fades to black.</span>
+</span><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#selector&#39;</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span><span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">&#39;#000&#39;</span><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>The interesting thing is you don't have to use a selector to construct the initial jQuery object. You can simply pass jQuery a hash and this will define your initial properties.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="mi">0</span><span class="p">}).</span><span class="nx">animate</span><span class="p">({</span><span class="nx">a</span><span class="o">:</span> <span class="mi">5</span><span class="p">},</span>
+</span><span class='line'>  <span class="nx">step</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">}</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>The result of running the above example will be 0 to 5 output in your console log. Duration still works as it would with a typical <code>animate</code>.</p>
+
+<h2>A real-world application</h2>
+
+<p>A more realistic example that reflects something I did recently is below.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$progress_bar</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#progress_bar&#39;</span><span class="p">);</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">$</span><span class="p">({</span><span class="nx">counter</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">0</span><span class="p">}).</span><span class="nx">animate</span><span class="p">({</span><span class="nx">counter</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="p">},</span>
+</span><span class='line'>  <span class="nx">step</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">$progress_bar</span><span class="p">.</span><span class="nx">css</span><span class="p">({</span><span class="nx">width</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">width</span><span class="p">});</span>
+</span><span class='line'><span class="nx">$progress_bar</span><span class="p">.</span><span class="nx">innerText</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">counter</span><span class="p">));</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">}</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+</feed>

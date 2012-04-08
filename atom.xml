@@ -4,7 +4,7 @@
   <title><![CDATA[jamesconroyfinn.com]]></title>
   <link href="http://jamesconroyfinn.com/atom.xml" rel="self"/>
   <link href="http://jamesconroyfinn.com/"/>
-  <updated>2012-03-25T00:29:59+00:00</updated>
+  <updated>2012-04-08T23:21:42+01:00</updated>
   <id>http://jamesconroyfinn.com/</id>
   <author>
     <name><![CDATA[James Conroy-Finn]]></name>
@@ -12,6 +12,81 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Spoofing Remote Addresses in Tests]]></title>
+    <link href="http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests/"/>
+    <updated>2012-03-30T15:28:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests</id>
+    <content type="html"><![CDATA[<p>In the process of testing some custom error handling I found myself
+needing to fake my remote address when visiting pages with Capybara and
+Rack::Test.</p>
+
+<p>To do this I had to delve in to the internals of Rack::Test using the
+following Cucumber step.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Given</span><span class="sr"> /^I send requests from a remote address$/</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">page</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">browser</span><span class="o">.</span><span class="n">current_session</span><span class="o">.</span><span class="n">instance_eval</span> <span class="p">{</span>
+</span><span class='line'>    <span class="vi">@headers</span><span class="o">[</span><span class="s1">&#39;REMOTE_ADDR&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="s1">&#39;10.0.1.1&#39;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The reason this is necessary is that Rack::Test does not expose
+the <code>REMOTE_ADDR</code> header, instead always setting the value to 127.0.0.1.</p>
+
+<!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">default_env</span>
+</span><span class='line'>  <span class="p">{</span> <span class="s2">&quot;rack.test&quot;</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">,</span> <span class="s2">&quot;REMOTE_ADDR&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;127.0.0.1&quot;</span> <span class="p">}</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">headers_for_env</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">headers_for_env</span>
+</span><span class='line'>  <span class="n">converted_headers</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="vi">@headers</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="nb">name</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">env_key</span> <span class="o">=</span> <span class="nb">name</span><span class="o">.</span><span class="n">upcase</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;_&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">env_key</span> <span class="o">=</span> <span class="s2">&quot;HTTP_&quot;</span> <span class="o">+</span> <span class="n">env_key</span> <span class="k">unless</span> <span class="s2">&quot;CONTENT_TYPE&quot;</span> <span class="o">==</span> <span class="n">env_key</span>
+</span><span class='line'>    <span class="n">converted_headers</span><span class="o">[</span><span class="n">env_key</span><span class="o">]</span> <span class="o">=</span> <span class="n">value</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">converted_headers</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><a href="https://github.com/rails/rails/issues/671#issuecomment-1780159">404s in Rails 3</a></li>
+<li><a href="http://www.alexrothenberg.com/2011/11/21/testing-ip-whitelisting-in-your-specs-and-features.html">Alex Rothenberg</a></li>
+<li><a href="https://github.com/brynary/rack-test/blob/fa7c6f9baf06e13352b42887e96c15c69bc10cb2/lib/rack/test.rb#L271">Rack::Test#default_env</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello Octopress]]></title>

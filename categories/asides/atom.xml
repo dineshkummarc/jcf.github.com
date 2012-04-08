@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Asides | jamesconroyfinn.com]]></title>
+  <link href="http://jamesconroyfinn.com/categories/asides/atom.xml" rel="self"/>
+  <link href="http://jamesconroyfinn.com/"/>
+  <updated>2012-04-08T23:21:42+01:00</updated>
+  <id>http://jamesconroyfinn.com/</id>
+  <author>
+    <name><![CDATA[James Conroy-Finn]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Octopress]]></title>
+    <link href="http://jamesconroyfinn.com/2011/10/hello-octopress/"/>
+    <updated>2011-10-07T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2011/10/hello-octopress</id>
+    <content type="html"><![CDATA[<p>In case you haven't heard of <a href="http://octopress.org">Octopress</a>, it's a fantastic static-site generator built on top of <a href="https://github.com/mojombo/jekyll">Jekyll</a>.</p>
+
+<p>I've been using Jekyll to build <a href="http://jamesconroyfinn.com">jamesconroyfinn.com</a> for sometime now and have been tickering with styles, layouts and features all along. Now with Octopress I feel like I've reached a point where I'm satisfied with the list of features, and the look of the site as a whole.</p>
+
+<!--more-->
+
+
+<h2>Features</h2>
+
+<p>Octopress offers some great features including:</p>
+
+<ul>
+<li><a href="http://octopress.org/docs/plugins/video-tag/">HTML5 Video Tag</a> - easily post images with class names and titles</li>
+<li><a href="http://octopress.org/docs/plugins/backtick-codeblock/">Backtick Code Block</a> - for simple lightweight code sharing</li>
+<li><a href="http://octopress.org/docs/plugins/codeblock/">Code Block</a> - for sharing code with titles and links</li>
+<li><a href="http://octopress.org/docs/plugins/include-code/">Include Code</a> - embed code from your filesystem with a download link</li>
+<li><a href="http://octopress.org/docs/plugins/gist-tag/">Gist Tag</a> - automatically downloads and embeds Github gists</li>
+<li><a href="http://octopress.org/docs/plugins/jsfiddle-tag/">jsFiddle</a> - embeds code from jsFiddle</li>
+<li><a href="http://octopress.org/docs/plugins/image-tag/">Image Tag</a> - easily post images with class names and titles</li>
+<li><a href="http://octopress.org/docs/plugins/render-partial/">Render Partial</a> - insert any file into another post or page</li>
+<li><a href="http://octopress.org/docs/plugins/blockquote/">Block Quote</a> - generate beautiful, semantic block quotes</li>
+<li><a href="http://octopress.org/docs/plugins/pullquote/">Pull Quote</a> - generate CSS only pull quotes — no duplicate data, no javascript</li>
+<li><a href="http://octopress.org/docs/plugins/category-generator/">Category Generator</a> - generates archive pages for each blog category</li>
+<li><a href="http://octopress.org/docs/plugins/include-array/">Include Array</a> - includes an array of partials specified in the _config.yml</li>
+</ul>
+
+
+<h2>Configuration</h2>
+
+<p>Configuring your site when it's powered by Octopress is really simple.  After you clone your Octopress repo you're provided with a Rakefile full of helpful tasks to create new posts, new pages, download the provided theme, start customising, and then <a href="http://octopress.org/docs/deploying/">deploy to an enviable list of hosts</a>.</p>
+
+<p>I've tweaked things a fair bit but about 90% of the markup produced comes straight from Octopress.</p>
+
+<h2>Tweaks</h2>
+
+<p>You can check out the changes I've made on <a href="https://github.com/jcf/jcf.github.com">Github</a> if you're interested.</p>
+
+<p>You'll find I have overidden a number of styles to get the header looking the way I want, added links to the footer, attempted to hide the sidebar at all times, and injected a smattering of Helvetica Neue.</p>
+
+<h2>Thanks</h2>
+
+<p>I have to thank <a href="http://brandonmathis.com/">Brandon Mathis</a> for all of his hardwork starting Octopress and to all those who have <a href="https://github.com/imathis/octopress/network/members">contributed</a> to making it what it is.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Looking in the Mirror - Part 1]]></title>
+    <link href="http://jamesconroyfinn.com/2011/05/looking-in-the-mirror-part1/"/>
+    <updated>2011-05-24T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2011/05/looking-in-the-mirror-part1</id>
+    <content type="html"><![CDATA[<p>I find it quite interesting to see how other people who and what tools they use. Whether it's reading about <a href="http://chris.wanstrath.usesthis.com/">Chris Wanstrath</a> rave about his <a href="http://amzn.to/m6hWhi">Logitech MX518 mouse</a>, finding out <a href="http://tom.preston-werner.usesthis.com/">Tom Preston-Werner</a> has some kind of twisted house fetish or reading about whether my favourite OSS contributor uses some of the same tools I do, I find this kind of insight in to who others get their shit done truly fascinating.</p>
+
+<!--more-->
+
+
+<p>I don't think I'll be doing an interview for <a href="http://usesthis.com">UsesThis</a> anytime soon (maybe when I have a few thousand followers on <a href="http://twitter.com/jamesconroyfinn">Twitter</a> and build a Rails-like framework for MacRuby development) so instead I'll post a few screenshots and share some of my hidden OS X gems.</p>
+
+<p><img class="left" src="/uploads/solarized-iterm2.png"></p>
+
+<p>If you haven't seen the <a href="http://ethanschoonover.com/solarized">solarized</a> theme I'd highly recommend it. I use it in <a href="http://code.google.com/p/macvim/">MacVim</a> and <a href="http://www.iterm2.com/">iTerm2</a> everyday in and out of work.  I find it to be very easy on the eyes without being wishy washy. That's the technical term.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Return Of Helvetica]]></title>
+    <link href="http://jamesconroyfinn.com/2011/02/return-of-helvetica/"/>
+    <updated>2011-02-19T20:11:00+00:00</updated>
+    <id>http://jamesconroyfinn.com/2011/02/return-of-helvetica</id>
+    <content type="html"><![CDATA[<p>A new year, a new look. I played with using a big serif font and a very minimalist design but went back to my beloved Helvetica. Big, bold and boring but it's what I like being a slightly aged and apparently uncool developer.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pretend Textile]]></title>
+    <link href="http://jamesconroyfinn.com/2010/10/pretend-latex/"/>
+    <updated>2010-10-03T20:11:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2010/10/pretend-latex</id>
+    <content type="html"><![CDATA[<p>I've been working on a new blogging system recently with the intention of powering <a href="http://jamesconroyfinn.com">jamesconroyfinn.com</a> using it. It featured a unique design per page and a giant footer with a 'slick' jQuery scrollable archive. It was a real example of a modern, swanky blog that impresses every visitor lucky enough to browse it's shiny pages.</p>
+
+<p>While working on this ultra-modern blogging engine I had to write a letter and used <a href="http://www.latex-project.org/">LaTeX</a> to do so. LaTex is a great way to produce clean, professionally typeset documents and in my opinion the results look fantastic.</p>
+
+<!--more-->
+
+
+<p>Then I thought in more depth about what I wanted from this blogging system I was writing. What did I want to acheive by reinventing the wheel?</p>
+
+<ul>
+<li>Simple navigation</li>
+<li>A distinctive look that would be recognisable almost immediately</li>
+<li>Something that shows what I'm about</li>
+<li>A way to share my thoughts and discoveries</li>
+</ul>
+
+
+<p>And this thinking led me to realise that using jQuery and Rails was complete overkill and was only distracting me from achieving what I really wanted to, what all of this was about. Writing about things I'm passionate about and sharing what I know about tools and technology I've used in the past.</p>
+
+<p>So here we are. Pretending Textile...</p>
+
+<p>I'm using <a href="http://github.com/mojombo/jekyll">jekyll</a>, <a href="http://daringfireball.net/projects/markdown/">markdown</a> in my posts, <a href="http://pygments.org/">pygments</a> for syntax highlighting, and <a href="http://code.google.com/webfonts">Google Fonts</a> among other things to make my site look like it was build using LaTex.</p>
+
+<h2>What it looks like</h2>
+
+<p>Code blocks:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Tex</span>
+</span><span class='line'>  <span class="c1"># always looks clean</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">clean?</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;true</span>
+</span><span class='line'><span class="sr">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;</span><span class="sr">/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;  end</span>
+</span><span class='line'><span class="sr">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Lorem Ipsum</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Blockquotes:</p>
+
+<p><blockquote><p>Someone who said something</p></blockquote></p>
+]]></content>
+  </entry>
+  
+</feed>

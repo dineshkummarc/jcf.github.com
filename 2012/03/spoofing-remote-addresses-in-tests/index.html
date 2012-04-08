@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>jamesconroyfinn.com</title>
+  <title>Spoofing Remote Addresses in Tests - jamesconroyfinn.com</title>
   <meta name="author" content="James Conroy-Finn">
 
   
@@ -20,7 +20,7 @@ Rack:: &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jamesconroyfinn.com">
+  <link rel="canonical" href="http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -90,34 +90,12 @@ Rack:: &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="intro">
-  <aside>
-    <p>
-      My name is <b>James Conroy-Finn</b>. I <a
-        href="https://github.com/jcf">build software</a> for fun and for
-      profit. I live in London, listen to lots of <a
-        href="http://last.fm/user/jamesconroyfinn">music</a>, and
-      contribute to a lot of great <a href="/projects">software
-        projects</a>.
-    </p>
-
-    <p>
-      If you would like to get in touch with me feel free to
-      <a href="mailto:james@logi.cl">send me an email</a>.
-    </p>
-  </aside>
-</div>
-
-
-<div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/2012/03/spoofing-remote-addresses-in-tests/">Spoofing Remote Addresses in Tests</a></h1>
+      <h1 class="entry-title">Spoofing Remote Addresses in Tests</h1>
     
     
       <p class="meta">
@@ -135,14 +113,14 @@ Rack:: &hellip;">
 
 <time datetime="2012-03-30T15:28:00+01:00" pubdate data-updated="true">Mar 30<span>th</span>, 2012</time>
         
-         | <a href="/2012/03/spoofing-remote-addresses-in-tests/#disqus_thread">Comments</a>
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>In the process of testing some custom error handling I found myself
+<div class="entry-content"><p>In the process of testing some custom error handling I found myself
 needing to fake my remote address when visiting pages with Capybara and
 Rack::Test.</p>
 
@@ -165,115 +143,61 @@ following Cucumber step.</p>
 <p>The reason this is necessary is that Rack::Test does not expose
 the <code>REMOTE_ADDR</code> header, instead always setting the value to 127.0.0.1.</p>
 
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2012/03/spoofing-remote-addresses-in-tests/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2011/10/hello-octopress/">Hello Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
+<!-- more -->
 
 
 
 
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">default_env</span>
+</span><span class='line'>  <span class="p">{</span> <span class="s2">&quot;rack.test&quot;</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">,</span> <span class="s2">&quot;REMOTE_ADDR&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;127.0.0.1&quot;</span> <span class="p">}</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">headers_for_env</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">headers_for_env</span>
+</span><span class='line'>  <span class="n">converted_headers</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="vi">@headers</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="nb">name</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">env_key</span> <span class="o">=</span> <span class="nb">name</span><span class="o">.</span><span class="n">upcase</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;_&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">env_key</span> <span class="o">=</span> <span class="s2">&quot;HTTP_&quot;</span> <span class="o">+</span> <span class="n">env_key</span> <span class="k">unless</span> <span class="s2">&quot;CONTENT_TYPE&quot;</span> <span class="o">==</span> <span class="n">env_key</span>
+</span><span class='line'>    <span class="n">converted_headers</span><span class="o">[</span><span class="n">env_key</span><span class="o">]</span> <span class="o">=</span> <span class="n">value</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">converted_headers</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-
-
-  
-
-
-<time datetime="2011-10-07T20:11:00+01:00" pubdate data-updated="true">Oct 7<span>th</span>, 2011</time>
-        
-         | <a href="/2011/10/hello-octopress/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In case you haven&#8217;t heard of <a href="http://octopress.org">Octopress</a>, it&#8217;s a fantastic static-site generator built on top of <a href="https://github.com/mojombo/jekyll">Jekyll</a>.</p>
-
-<p>I&#8217;ve been using Jekyll to build <a href="http://jamesconroyfinn.com">jamesconroyfinn.com</a> for sometime now and have been tickering with styles, layouts and features all along. Now with Octopress I feel like I&#8217;ve reached a point where I&#8217;m satisfied with the list of features, and the look of the site as a whole.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2011/10/hello-octopress/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2011/05/looking-in-the-mirror-part1/">Looking in the Mirror - Part 1</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-24T20:11:00+01:00" pubdate data-updated="true">May 24<span>th</span>, 2011</time>
-        
-         | <a href="/2011/05/looking-in-the-mirror-part1/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I find it quite interesting to see how other people who and what tools they use. Whether it&#8217;s reading about <a href="http://chris.wanstrath.usesthis.com/">Chris Wanstrath</a> rave about his <a href="http://amzn.to/m6hWhi">Logitech MX518 mouse</a>, finding out <a href="http://tom.preston-werner.usesthis.com/">Tom Preston-Werner</a> has some kind of twisted house fetish or reading about whether my favourite OSS contributor uses some of the same tools I do, I find this kind of insight in to who others get their shit done truly fascinating.</p>
+<ul>
+<li><a href="https://github.com/rails/rails/issues/671#issuecomment-1780159">404s in Rails 3</a></li>
+<li><a href="http://www.alexrothenberg.com/2011/11/21/testing-ip-whitelisting-in-your-specs-and-features.html">Alex Rothenberg</a></li>
+<li><a href="https://github.com/brynary/rack-test/blob/fa7c6f9baf06e13352b42887e96c15c69bc10cb2/lib/rack/test.rb#L271">Rack::Test#default_env</a></li>
+</ul>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2011/05/looking-in-the-mirror-part1/">Read on &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/2011/05/please-do-rest-right/">Please Do REST Right</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">James Conroy-Finn</span></span>
+
+      
 
 
 
@@ -285,83 +209,50 @@ the <code>REMOTE_ADDR</code> header, instead always setting the value to 127.0.0
   
 
 
-<time datetime="2011-05-02T20:11:00+01:00" pubdate data-updated="true">May 2<span>nd</span>, 2011</time>
-        
-         | <a href="/2011/05/please-do-rest-right/#disqus_thread">Comments</a>
-        
-      </p>
+<time datetime="2012-03-30T15:28:00+01:00" pubdate data-updated="true">Mar 30<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/rails/'>Rails</a>, <a class='category' href='/categories/ruby-/'>Ruby,</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests/" data-via="jamesconroyfinn" data-counturl="http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests/" >Tweet</a>
+  
+  
+  
+</div>
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/10/hello-octopress/" title="Previous Post: Hello Octopress">&laquo; Hello Octopress</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-  <div class="entry-content"><p>I recently received an email from a large email delivery company bragging about a great new RESTful API, which got me quite excited because their current offering is pretty poor.</p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2011/05/please-do-rest-right/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2011/03/javascript-garden/">Javascript Garden</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-15T20:11:00+00:00" pubdate data-updated="true">Mar 15<span>th</span>, 2011</time>
-        
-         | <a href="/2011/03/javascript-garden/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;ve mentioned this site to a few people in the last few days but couldn&#8217;t remember the exact URL. Turns out it&#8217;s not as simple as googling &#8220;github javascript advanced&#8221; so here&#8217;s a direct link.</p>
-
-<p><a href="http://bonsaiden.github.com/JavaScript-Garden/">Bonsaiden&#8217;s Javascript Garden</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    <div>
-      
-        <a class="prev" href="/page/2/">&larr; Older</a>
-      
-      <a href="/archives">Blog Archives</a>
-      
-    </div>
-  </div>
-</div>
 <aside class="sidebar">
   
     
   
 </aside>
+
 
     </div>
   </div>
@@ -385,7 +276,10 @@ the <code>REMOTE_ADDR</code> header, instead always setting the value to 127.0.0
       var disqus_shortname = 'jcf';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests/';
+        var disqus_url = 'http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

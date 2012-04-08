@@ -2,15 +2,15 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://jamesconroyfinn.com/2010/10/pretend-latex/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/2010/10/refactoring-in-ruby/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/2010/10/jquery-animate/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/2010/10/dotfiles/</loc>
@@ -18,27 +18,31 @@
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/2011/02/return-of-helvetica/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/2011/03/javascript-garden/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/2011/05/please-do-rest-right/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/2011/05/looking-in-the-mirror-part1/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/2011/10/hello-octopress/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests/</loc>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/404.html</loc>
@@ -46,11 +50,11 @@
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/archives/</loc>
-        <lastmod>2012-03-24T23:43:02+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/</loc>
-        <lastmod>2012-03-24T23:43:23+00:00</lastmod>
+        <lastmod>2012-04-08T23:10:48+01:00</lastmod>
     </url>
     <url>
         <loc>http://jamesconroyfinn.com/key/</loc>

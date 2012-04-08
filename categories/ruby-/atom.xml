@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby, | jamesconroyfinn.com]]></title>
+  <link href="http://jamesconroyfinn.com/categories/ruby-/atom.xml" rel="self"/>
+  <link href="http://jamesconroyfinn.com/"/>
+  <updated>2012-04-08T23:21:42+01:00</updated>
+  <id>http://jamesconroyfinn.com/</id>
+  <author>
+    <name><![CDATA[James Conroy-Finn]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Spoofing Remote Addresses in Tests]]></title>
+    <link href="http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests/"/>
+    <updated>2012-03-30T15:28:00+01:00</updated>
+    <id>http://jamesconroyfinn.com/2012/03/spoofing-remote-addresses-in-tests</id>
+    <content type="html"><![CDATA[<p>In the process of testing some custom error handling I found myself
+needing to fake my remote address when visiting pages with Capybara and
+Rack::Test.</p>
+
+<p>To do this I had to delve in to the internals of Rack::Test using the
+following Cucumber step.</p>
+
+<p>``` ruby
+Given /<sup>I</sup> send requests from a remote address$/ do
+  page.driver.browser.current_session.instance_eval {</p>
+
+<pre><code>@headers['REMOTE_ADDR'] = '10.0.1.1'
+</code></pre>
+
+<p>  }
+end
+```</p>
+
+<p>The reason this is necessary is that Rack::Test does not expose
+the <code>REMOTE_ADDR</code> header, instead always setting the value to 127.0.0.1.</p>
+
+<!-- more -->
+
+
+<p>``` ruby
+def default_env
+  { "rack.test" => true, "REMOTE_ADDR" => "127.0.0.1" }.merge(headers_for_env)
+end</p>
+
+<p>def headers_for_env
+  converted_headers = {}</p>
+
+<p>  @headers.each do |name, value|</p>
+
+<pre><code>env_key = name.upcase.gsub("-", "_")
+env_key = "HTTP_" + env_key unless "CONTENT_TYPE" == env_key
+converted_headers[env_key] = value
+</code></pre>
+
+<p>  end</p>
+
+<p>  converted_headers
+end
+```</p>
+
+<ul>
+<li><a href="https://github.com/rails/rails/issues/671#issuecomment-1780159">404s in Rails 3</a></li>
+<li><a href="http://www.alexrothenberg.com/2011/11/21/testing-ip-whitelisting-in-your-specs-and-features.html">Alex Rothenberg</a></li>
+<li><a href="https://github.com/brynary/rack-test/blob/fa7c6f9baf06e13352b42887e96c15c69bc10cb2/lib/rack/test.rb#L271">Rack::Test#default_env</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How To Send In Javascript]]></title>
+    <link href="http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript/"/>
+    <updated>2011-02-20T20:11:00+00:00</updated>
+    <id>http://jamesconroyfinn.com/2011/02/how-to-send-in-javascript</id>
+    <content type="html"><![CDATA[<p>Ruby gives you a number of ways to send messages to objects. You can use
+dot syntax to send a message, you can use <code>#send</code> and you can access
+methods directly using <code>#method</code>.</p>
+
+<!--more-->
+
+
+<p><div><script src='https://gist.github.com/965299.js?file='></script>
+<noscript><pre><code>var rainbow = {
+  dark_red: '900',
+  bright_red: 'f00',
+
+  dark_green: '090',
+  bright_green: '0f0',
+
+  dark_blue: '009',
+  bright_blue: '00f'
+}
+
+var color = function(name, bright) {
+  var valid_color = rainbow[(bright ? 'bright' : 'dark') + '_' + name];
+  if (valid_color) return '#' + valid_color();
+}</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>
